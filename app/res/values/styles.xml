@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme matching the L0ck-ECP look; no action bar, brand background. -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bgPrimary</item>
+        <item name="android:colorBackground">@color/bgPrimary</item>
+        <item name="android:colorPrimary">@color/greenMid</item>
+        <item name="android:colorAccent">@color/orange</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+        <item name="android:statusBarColor">@color/bgPrimary</item>
+        <item name="android:navigationBarColor">@color/bgPrimary</item>
+    </style>
+</resources>

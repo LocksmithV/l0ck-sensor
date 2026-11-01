@@ -1,0 +1,40 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'cz.l0ck.sensor'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'cz.l0ck.sensor'
+        minSdk 33
+        targetSdk 35
+        versionCode 1
+        versionName '0.1.0'
+    }
+
+    // Flat layout: manifest in app/, sources in app/src/. No AndroidX, no resource dirs.
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    lint {
+        abortOnError false
+    }
+}

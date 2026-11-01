@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Palette taken from the L0ck-ECP project theme (lib/core/theme/app_colors.dart). -->
+<resources>
+    <color name="ic_launcher_background">#0A0C0A</color>
+
+    <color name="bgPrimary">#FF0A0C09</color>
+    <color name="bgPanel">#FF111410</color>
+    <color name="bgWidget">#FF161A13</color>
+    <color name="bgBorder">#FF2D4A1E</color>
+
+    <color name="greenMid">#FF5A8A2E</color>
+    <color name="greenLight">#FF8FAF6A</color>
+    <color name="orange">#FFEF9F27</color>
+
+    <color name="textPrimary">#FFC8D4B8</color>
+    <color name="textSecondary">#FF8FAF6A</color>
+    <color name="textDim">#FF5A7A3A</color>
+
+    <color name="statusGreen">#FF22C55E</color>
+    <color name="statusAmber">#FFF59E0B</color>
+    <color name="statusRed">#FFE24B4A</color>
+</resources>

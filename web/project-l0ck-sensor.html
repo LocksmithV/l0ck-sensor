@@ -1,0 +1,120 @@
+<!doctype html>
+<!-- Drop-in project page for the L0ckSm1thV site. Uses the site's own style.css and assets/.
+     Static, self-contained (no app.js needed). Sibling of project.html (L0ck-ECP). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="L0ck-Sensor — passive wireless counter-surveillance for Android.">
+<meta name="robots" content="index, nofollow">
+<title>L0ckSm1thV // sensor</title>
+<link rel="preload" href="assets/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="mask-bg" aria-hidden="true"></div>
+
+<header class="hud-top">
+  <div class="hud-brand"><span class="bp">&gt;_</span> L0ckSm1thV</div>
+  <div class="hud-top-right">
+    <span class="chip"><span class="dot"></span> INFORMATIONAL PAGE</span>
+  </div>
+</header>
+
+<nav class="hud-nav">
+  <a href="/">[ NODE ]</a>
+  <a href="opsec.html">[ INCOGNITO ]</a>
+  <a href="project.html">[ PROJECT ]</a>
+  <a href="project-l0ck-sensor.html" class="active">[ SENSOR ]</a>
+  <a href="about.html">[ ABOUT ]</a>
+</nav>
+
+<main class="hud">
+
+  <section class="titleblock">
+    <h1>L0CK-<span class="amber">SENSOR</span></h1>
+    <p class="subtitle">PASSIVE WIRELESS COUNTER-SURVEILLANCE</p>
+  </section>
+
+  <section class="panel proj-hero">
+    <p class="hero-tagline">One phone. Every nearby radio. Watched.</p>
+    <p class="concept-note">DEFENSIVE · PASSIVE · OFFLINE — IT LISTENS, IT NEVER ATTACKS.</p>
+    <a class="gh-btn" href="https://github.com/LocksmithV" rel="noopener">
+      <span class="gh-mark">&lt;/&gt;</span> github.com/LocksmithV
+    </a>
+  </section>
+
+  <div class="project-split">
+
+    <section class="panel proj-text">
+      <div class="panel-h">// MISSION</div>
+      <p>L0ck-Sensor turns an accountless LineageOS phone into a passive
+      sensor for the Bluetooth and Wi-Fi around you. It learns what is
+      normal at the places you go, then flags what should not be there —
+      a tracker that follows you, a familiar network answering from the
+      wrong radio.</p>
+      <p>No account, no cloud, no single point of exposure. The trail you
+      leave is the trail they follow; this watches the other direction.</p>
+
+      <div class="panel-h" style="margin-top:28px">// PRINCIPLES</div>
+      <ul class="checklist tight">
+        <li><span class="num">A</span> Free and open source — auditable, no proprietary lock-in.</li>
+        <li><span class="num">B</span> Offline by design — no INTERNET permission; data never leaves the phone.</li>
+        <li><span class="num">C</span> Passive and defensive — it never attacks, deauths or jams.</li>
+        <li><span class="num">D</span> Baseline per location — an anomaly is what is new, not just what is loud.</li>
+      </ul>
+    </section>
+
+    <section class="panel proj-layers">
+      <div class="panel-h">// WHAT IT WATCHES</div>
+      <div class="layer">
+        <span class="layer-k">TRACKERS</span>
+        <span class="layer-v">AirTag &amp; Find My, Samsung SmartTag, Tile, Chipolo, Google FMDN</span>
+      </div>
+      <div class="layer">
+        <span class="layer-k">ROGUE AP</span>
+        <span class="layer-v">evil-twin — a known network from an unexpected radio</span>
+      </div>
+      <div class="layer">
+        <span class="layer-k">FOLLOW-ME</span>
+        <span class="layer-v">devices that reappear across the places you go</span>
+      </div>
+      <div class="layer">
+        <span class="layer-k">SIGNALS</span>
+        <span class="layer-v">distance estimate · approaching / receding · AP fingerprint</span>
+      </div>
+      <div class="layer">
+        <span class="layer-k">PROBE</span>
+        <span class="layer-v">read-only GATT to identify a suspect — no writes, no interference</span>
+      </div>
+
+      <div class="proj-foot">
+        <span class="warn">⚠</span>
+        <span>DESIGN GOAL · DEFENSIVE AWARENESS</span>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="panel proj-preview">
+    <div class="panel-h">// INTERFACE PREVIEW</div>
+    <img src="assets/sensor-about.png" alt="L0ck-Sensor — in-app description" class="preview-shot">
+    <p class="dim">Device list, distance and trend, per-location baseline, alerts — in one view.</p>
+  </section>
+
+  <p class="disclaimer">
+    Baselines and operational detail stay on the device by design. Code and
+    documentation live on <a href="https://github.com/LocksmithV" rel="noopener">GitHub</a>.
+  </p>
+
+</main>
+
+<footer class="hud-foot">
+  <span><a class="foot-prompt" href="/public/" title="L0ckSm1thV"><span class="bp">&gt;_</span> L0ckSm1thV</a></span>
+  <span class="dim">independent infrastructure · minimal exposure · encrypted transport</span>
+  <span class="dim">© 2026</span>
+</footer>
+
+</body>
+</html>

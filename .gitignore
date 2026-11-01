@@ -1,0 +1,26 @@
+# Session captures and sideloaded APKs stay local
+logs/*
+!logs/.gitkeep
+apks/*
+!apks/.gitkeep
+
+# Raw captures anywhere
+*.pcap
+*.pcapng
+btsnoop_hci*.log
+
+__pycache__/
+*.pyc
+
+# Android build output and toolchain (kept local, not in git)
+.gradle/
+build/
+app/build/
+local.properties
+toolchain/
+*.keystore
+
+# Site CSS/fonts pulled only for local preview — belong to the website, not this repo
+web/style.css
+web/assets/jetbrainsmono.woff2
+web/assets/mask-side.jpg
